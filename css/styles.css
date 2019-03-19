@@ -54,3 +54,33 @@ h1 {
     -o-transform: rotate(20deg);
     transform: rotate(20deg);
 }
+
+/* Features Section */
+
+#features {
+    padding: 6% 15%;
+}
+
+.feature-div {
+    padding: 5%;
+    text-align: center;
+}
+
+.feature-icon {
+    color: #FF5869;
+    font-size: 50px;
+    padding: 2%;
+}
+
+.feature-icon:hover {
+    color: #ff4358;
+}
+
+.feature-header {
+    font-weight: 700;
+}
+
+.feature-copy {
+    color: #8f8f8f;
+    font-size: .8rem;;
+}
