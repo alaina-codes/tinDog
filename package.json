@@ -1,3 +1,4 @@
 {
-    "grammar": "write-good *.md --no-passive"
+    "grammar": "write-good *.md --no-passive",
+    "lint:css": "stylelint src/common/**/*.css"
 }
