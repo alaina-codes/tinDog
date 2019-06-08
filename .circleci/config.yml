@@ -1,10 +1,65 @@
- version: 2
- jobs:
-   build:
-     docker:
-       - image: circleci/node:10
-     steps:
-       - checkout
-       - run: echo "A first hello"
-       - run: npm i
-       - run: stylelint "css/*.css"
+#  version: 2
+#  jobs:
+#    build:
+#      docker:
+#        - image: circleci/node:10
+#      steps:
+#        - checkout
+#        - run: echo "A first hello"
+#        - run: npm i
+
+version: 2
+
+jobs:
+  checkout-and-install:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      - persist_to_workspace:
+          root: ~/
+          paths: project
+
+  stylelint:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run:
+          name: Set up artifacts directory
+          command: mkdir -p artifacts/stylelint
+      - run:
+          name: Lint CSS
+          command:
+            yarn --silent stylelint
+            --custom-formatter './node_modules/stylelint-junit-formatter' > ./artifacts/stylelint/stylelint.xml
+      - store_test_results:
+          path: ./artifacts
+      - store_artifacts:
+          path: ./artifacts
+
+  build:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: echo " hello"
+      - store_artifacts:
+          path: ./.out
+
+workflows:
+  version: 2
+  push:
+    jobs:
+      - checkout-and-install
+      - stylelint:
+          requires:
+            - checkout-and-install
+      - build:
+          requires:
+            - checkout-and-install
