@@ -1,3 +1,5 @@
+/* Base */
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -30,7 +32,7 @@ p {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 10%;
 }
 
 /* Navigation Bar */
@@ -64,17 +66,17 @@ p {
 
 .title-image {
     width: 60%;
-    -webkit-transform:rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
     transform: rotate(20deg);
+    position: absolute;
+    right: 25%;
 }
 
 /* Features Section */
 
 #features {
     padding: 6% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-div {
@@ -141,4 +143,14 @@ p {
 
 .pricing-column {
     padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
 }
