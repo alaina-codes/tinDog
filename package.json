@@ -1,4 +1,8 @@
 {
-    "grammar": "write-good *.md --no-passive",
-    "lint:css": "stylelint src/common/**/*.css"
+    "scripts": {
+        "stylelint": "stylelint \"css/*.css\""
+    },
+    "devDependencies": {
+        "stylelint": "^8.2.0"
+    }
 }
