@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "stylelint": "stylelint \"css/*.css\""
+        "stylelint": "stylelint \"css/*.css\"",
+        "grammar": "write-good *.md --no-passive"
     },
     "devDependencies": {
         "stylelint": "10.1.0",

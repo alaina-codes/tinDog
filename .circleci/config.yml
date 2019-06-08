@@ -41,6 +41,15 @@ jobs:
       - store_artifacts:
           path: ./artifacts
 
+  grammar:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - run:
+          name: Check Grammar
+          command:
+            write-good *.md --no-passive
+
   build:
     docker:
       - image: circleci/node:10
