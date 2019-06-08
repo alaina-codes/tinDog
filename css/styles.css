@@ -9,6 +9,28 @@ p {
     color: #8f8f8f;
 }
 
+/* Spacing */
+
+.container-fluid {
+    padding: 3% 15% 10%;
+}
+
+/* Color Sections */
+
+.deep-pink-section {
+    background-color: #ff5869;
+    color: #fff;
+}
+
+.light-pink-section {
+    background-color: #ff8b97;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
 /* General-ish Headings */
 
 .large-header {
@@ -23,28 +45,10 @@ p {
     line-height: 1.5;
 }
 
-#title {
-    text-align: left;
-}
+/* Buttons */
 
-.container-fluid {
-    padding: 3% 15% 10%;
-}
-
-/* Color Section */
-
-.deep-pink-section {
-    background-color: #ff5869;
-    color: #fff;
-}
-
-.light-pink-section {
-    background-color: #ff8b97;
-    color: #fff;
-}
-
-.white-section {
-    background-color: #fff;
+.download-button {
+    margin: 5% 3% 5% 0;
 }
 
 /* Navigation Bar */
@@ -68,13 +72,11 @@ p {
     font-weight: 400;
 }
 
-/* Download Buttons */
+/* Title Section*/
 
-.download-button {
-    margin: 5% 3% 5% 0;
+#title {
+    text-align: left;
 }
-
-/* Title Image */
 
 .title-image {
     width: 60%;
@@ -90,8 +92,18 @@ p {
     position: relative;
 }
 
+.feature-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .feature-div {
     padding: 5%;
+}
+
+.feature-copy {
+    color: #8f8f8f;
+    font-size: 0.8rem;
 }
 
 .feature-icon {
@@ -104,28 +116,18 @@ p {
     color: #ff8b97;
 }
 
-.feature-header {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.feature-copy {
-    color: #8f8f8f;
-    font-size: .8rem;
-}
-
-/* Testimonials */
-
-.testimonial-image {
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
-}
+/* Testimonials Section */
 
 .testimonial-text {
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
 }
 
 .carousel-item {
