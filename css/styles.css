@@ -11,14 +11,12 @@ h1 {
 }
 
 h2 {
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 3rem;
     line-height: 1.5;
 }
 
 h3 {
-    font-family: 'Montserrat';
     font-size: 1.5rem;
 }
 
@@ -153,4 +151,32 @@ p {
         position: static;
         transform: rotate(0);
     }
+}
+
+/* Call to Action  */
+
+#cta {
+    background-color: #FF5869;
+    color: #fff;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.cta-header {
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 1.5;
+}
+
+/* Footer */
+
+#footer {
+    background-color: #fff;
+    color: #8f8f8f;
+    text-align: center;
+    padding: 3% 15%;
+}
+
+.socials {
+    margin: 20px 10px;
 }
