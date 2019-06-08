@@ -1,7 +1,8 @@
 # :fire: tinDog
 
 Tinder for Dogz (lol)
-[Live Preview!](https://alaina-codes.github.io/tinDog/)
+
+[Live Preview!!!](https://alaina-codes.github.io/tinDog/)
 
 ![website preview](https://i.imgur.com/0M1ZXTJ.png)
 
