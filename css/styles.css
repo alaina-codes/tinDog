@@ -8,6 +8,22 @@ h1 {
     line-height: 1.4;
 }
 
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8f8f8f;
+}
+
 #title {
     background-color: #FF5869;
     color: #fff;
@@ -73,7 +89,7 @@ h1 {
 }
 
 .feature-icon:hover {
-    color: #ff4358;
+    color: #ff8b97;
 }
 
 .feature-header {
@@ -83,4 +99,35 @@ h1 {
 .feature-copy {
     color: #8f8f8f;
     font-size: .8rem;;
+}
+
+/* Testimonials */
+
+#testimonials {
+    text-align: center;
+    background-color: #ff8b97;
+    color: #fff;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* Press */
+
+#press {
+    background-color: #ff8b97;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 13%;
+    margin: 20px 20px 50px;
 }
