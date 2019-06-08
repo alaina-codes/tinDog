@@ -68,9 +68,9 @@ workflows:
       - stylelint:
           requires:
             - checkout-and-install
-      - grammar:
-          requires:
-            - checkout-and-install
+      # - grammar:
+      #     requires:
+      #       - checkout-and-install
       - build:
           requires:
             - checkout-and-install
