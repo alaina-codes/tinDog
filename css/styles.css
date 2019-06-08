@@ -3,10 +3,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-}
-
-p {
-    color: #8f8f8f;
+    
 }
 
 /* Spacing */
@@ -15,7 +12,15 @@ p {
     padding: 3% 15% 10%;
 }
 
-/* Color Sections */
+/* Color Text/Sections */
+
+.black {
+    color: #000;
+}
+
+.gray {
+    color: #8f8f8f;
+}
 
 .deep-pink-section {
     background-color: #ff5869;
@@ -163,6 +168,7 @@ p {
     font-weight: 700;
     font-size: 3rem;
     line-height: 1.5;
+    color: #000;
 }
 
 @media (max-width: 1028px) {
