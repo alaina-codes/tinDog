@@ -48,7 +48,7 @@ jobs:
       - run:
           name: Check Grammar
           command:
-            yarn --silent write-good *.md --no-passive
+            write-good *.md --no-passive
 
   build:
     docker:
@@ -66,6 +66,9 @@ workflows:
     jobs:
       - checkout-and-install
       - stylelint:
+          requires:
+            - checkout-and-install
+      - grammar:
           requires:
             - checkout-and-install
       - build:
